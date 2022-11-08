@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTelaInicial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/background_gradient"
+        android:text="Tela Inicial"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="206dp"
+        android:gravity="center"
+        android:text="Projeto Estoque Grupo B"
+        android:textColor="@color/light_blue"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnLerQrCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelaInicial" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="192dp"
+        android:gravity="center"
+        android:text="Integrantes"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnLerQrCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="Bruno Wallace   RGM: 26419793\nMatheus Rosa   RGM: 26445611\nRenan Mariano  RGM: 28241193\nYuri Brasiliano   RGM: 25867563"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnLerQrCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnLerQrCode"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/round_blue_shape"
+        android:backgroundTint="@color/btnblue"
+        android:text="Ler QRcode"
+        app:layout_constraintBottom_toTopOf="@+id/btnFechar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/round_blue_shape"
+        android:backgroundTint="@color/btnblue"
+        android:text="Fechar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

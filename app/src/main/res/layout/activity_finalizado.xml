@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".Finalizado">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/fotoProduto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_gradient"
+            android:src="@drawable/ic_produto_img" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleScanner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:gravity="center"
+        android:text="Por favor Scannear as seguintes informações do seguinte produto: \n\n[Nome do Produto Aqui]"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView2" />
+
+    <TextView
+        android:id="@+id/labelScannerRua"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:gravity="center"
+        android:text="Quantidade ainda em estoque"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_blue_shape"
+        android:text="Fechar Tela"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
